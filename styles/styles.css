@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle, #001d61 0%, #00071f 100%);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.leftC {
+  padding: none;
+  border-right: 3px solid rgba(255, 255, 255, 0.575);
+}
+
+.cards {
+  border: 2px solid rgba(255, 255, 255, 0.397);
+  min-width: 6rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.cards span {
+  font-size: 2.4rem;
+  font-weight: 900;
+
+}
+
+.floating-shapes .shape {
+  background: rgba(0, 17, 255, 0.26);
+  position: absolute;
+  border-radius: 50%;
+  animation: float 6s infinite ease-in-out;
+}
+
+.shape-1 {
+  width: 50px;
+  height: 50px;
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.Ctitle {
+  animation: floatTitle 2.5s infinite ease-in-out;
+}
+
+
+.cardsA {
+  animation: floatA 2.5s infinite ease-in-out;
+}
+
+.cardsB {
+  animation: floatB 2.5s infinite ease-in-out;
+}
+
+.shape-2 {
+  width: 100px;
+  height: 100px;
+  bottom: 5%;
+  right: 8%;
+  animation-delay: 3s;
+}
+
+.instagram {
+  max-width: 9rem;
+
+}
+
+
+.linkedin {
+  max-width: 6rem;
+}
+
+.shape-3 {
+  display: none;
+  width: 100px;
+  height: 100px;
+  top: 80%;
+  left: 5%;
+  animation-delay: 3.5s;
+}
+
+.shape-4 {
+  width: 40px;
+  height: 40px;
+  top: 20%;
+  left: 10%;
+  animation-delay: 3.5s;
+}
+
+.audax {
+  font-weight: bold;
+  color: #b0b0b0;
+  background: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.452), 0 1px 5px rgba(0, 0, 0, 0.8);
+  margin-bottom: 2rem;
+}
+
+.shape-5 {
+  background: rgba(1, 8, 34, 0.205);
+  width: 50px;
+  height: 50px;
+  top: 10%;
+  right: 10%;
+  animation-delay: 3.5s;
+}
+
+.logo {
+  max-width: 12rem;
+  margin-bottom: -15px;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes floatTitle {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes floatB {
+
+  0%,
+  100% {
+    transform: translateY(-8px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes floatA {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.notif:hover,
+.cards:hover {
+  transform: scale(1.01);
+  background-color: #ffffff34;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
+#mailInput {
+  height: 50%;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #cfcdcd;
+  border: 1px solid #ffffff;
+  outline: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), inset 0 2px 4px rgba(255, 255, 255, 0.9);
+  font-weight: 900;
+
+  transition: all 0.3s ease;
+}
+
+#mailInput:focus {
+  background-color: #ffffff;
+  color: #3d3d3d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), inset 0 2px 4px rgba(100, 100, 100, 0.6);
+  font-weight: 900;
+  transform: scale(1.02);
+}
+
+#mailInput:hover {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), inset 0 2px 4px rgba(100, 100, 100, 0.6);
+}
+
+#mailInput::-webkit-input-placeholder {
+  color: black;
+  font-weight: 900;
+}
+
+.notif {
+  width: 50%;
+  border: 1px solid #ffffffa4;
+  font-weight: 900;
+}
+
+@media (max-width:1000px) {
+  .rightC {
+    display: none !important;
+  }
+
+  .leftC {
+    border: none;
+  }
+
+  .forSmallScreens {
+    display: block !important;
+  }
+
+  .shape-3 {
+    display: block;
+  }
+}
+
+.forSmallScreens {
+  display: none;
+}
