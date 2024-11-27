@@ -13,10 +13,15 @@ function updateCountdown() {
   document.getElementById("hours").innerText = hours;
   document.getElementById("minutes").innerText = minutes;
   document.getElementById("seconds").innerText = seconds;
+  document.getElementById("sdays").innerText = days;
+  document.getElementById("shours").innerText = hours;
+  document.getElementById("sminutes").innerText = minutes;
+  document.getElementById("sseconds").innerText = seconds;
 
   if (timeLeft <= 0) {
     clearInterval(interval);
     document.getElementById("countdown").innerHTML = "We are live now!";
+    document.getElementById("scountdown").innerHTML = "We are live now!";
   }
 }
 
